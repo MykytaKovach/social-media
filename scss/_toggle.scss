@@ -1,0 +1,38 @@
+@import 'config';
+.toggle-button{
+position: relative;
+appearance: none; 
+height: 25px;
+outline: none;
+cursor: pointer;
+&:before{
+    content: '';
+    top:0;
+    left:0;
+    position: absolute;
+    width: 50px; height: 30px;
+    background: linear-gradient(90deg, rgba(55,143,232,1) 0%, rgba(62,218,130,1) 100%);
+    border-radius: 50px;
+}
+&:after{
+content: "";
+position: absolute;
+top: 4px; left: 3px;
+width: 22px; height: 22px;
+background-color: $dark-bg-top;
+border-radius: 50%;
+transition: 0.4s;
+}
+
+&:checked{
+&:after{ 
+left: 24px;
+background: #fff;
+
+}
+&:before{
+    background:  hsl(230, 22%, 74%);
+}
+}
+
+}

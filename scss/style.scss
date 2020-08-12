@@ -1,0 +1,42 @@
+@import 'utils';
+@import 'config';
+@import 'toggle';
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: $dark-bg;
+    color:$dark-text-2;
+}
+
+header{
+margin-top: 40px;
+display:flex;
+justify-content:space-between ;
+align-items: center;
+
+
+
+}
+.toggle{
+    display: flex;
+    align-items:center;
+    margin-right: 60px;
+
+    p{
+        margin-right: 10px;
+    }
+}
+.top-bg{
+    top:0;
+    width:100%;
+    background:$dark-bg-top;
+    height:25vh ;
+    position: absolute;
+    z-index: -1;
+    
+}
