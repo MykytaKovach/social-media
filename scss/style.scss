@@ -1,6 +1,7 @@
 @import 'utils';
 @import 'config';
 @import 'toggle';
+@import 'socials';
 *{
     box-sizing:border-box;
     padding: 0;
@@ -11,10 +12,14 @@ body{
     font-family: 'Inter', sans-serif;
     background: $dark-bg;
     color:$dark-text-2;
+    
+    h1{
+        margin-top: 25px;
+    }
 }
 
 header{
-margin-top: 40px;
+margin-top: 30px;
 display:flex;
 justify-content:space-between ;
 align-items: center;
@@ -35,8 +40,141 @@ align-items: center;
     top:0;
     width:100%;
     background:$dark-bg-top;
-    height:25vh ;
+    height:35vh ;
     position: absolute;
     z-index: -1;
     
+}
+
+// Big cards
+
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    div{
+        margin-top: 20px;
+    }
+}
+
+.card{
+    margin-top: 20px;
+    width:23%;
+    border-radius: 3px;
+    background-color: $dark-card;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    
+    .card-header{
+        
+        display: flex;
+        font-size: 14px;
+
+        p{
+            margin-left: 5px;
+        }
+    }
+
+    .card-info{
+
+        text-align: center;
+    }
+    .change-rate{
+        margin-bottom: 35px;
+    }
+}
+.change-rate{
+    display: flex;
+    align-items: center;
+    
+    img{
+        height: 5px;
+    }
+
+    p{
+        font-size:12px;
+        font-weight: 700;
+        margin-left:5px;
+    }
+
+
+}
+
+.cards-small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card-sm{
+    margin-top: 25px;
+    width:23%;
+    border-radius: 3px;
+    background-color: $dark-card;
+    padding:20px 25px;
+
+    .category{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .statistics{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    }
+}
+
+@media(max-width:900px){
+ .cards{
+     flex-wrap: wrap;
+     .card{
+         width:49%;
+     }
+ }
+ .cards-small{
+     .card-sm{
+         width:49%;
+     }
+ }
+}
+
+@media(max-width:500px){
+    .cards{
+        flex-wrap: wrap;
+        .card{
+            width:100%;
+        }
+    }
+    .cards-small{
+        .card-sm{
+            width:100%;
+        }
+    }
+    header{
+        justify-content: flex-start;
+        flex-flow: column;
+        h1{
+            font-size: 25px;
+        }
+        .toggle{
+            width:80%;
+            justify-content:space-between;
+            margin-top: 10px;
+        }
+        
+        .horizontal{
+            width:100%;
+            height: 1px;
+            background: $dark-text-2;
+            margin-top: 20px;
+        }
+        .heading{
+            margin-right: auto;
+        }
+        
+    }
+
 }
