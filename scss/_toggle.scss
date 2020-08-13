@@ -1,13 +1,9 @@
 @import 'config';
 .toggle-button{
+all:unset;
 position: relative;
-appearance: none; 
--moz-appearance: none;
--webkit-appearance: none;
 height: 25px;
-outline: none;
 cursor: pointer;
-border:none;
 &:before{
     content: '';
     top:0;
