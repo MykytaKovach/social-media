@@ -38,6 +38,41 @@
     display:none;
 }
 
+.bg-dark{
+    background: $dark-bg;
+}
+
+.bg-dark-top{
+    background: $dark-bg-top;
+}
+
+.dark-card{
+    background: $dark-card;
+}
+
+.dark-text{
+    color: $dark-text;
+}
+.bg-light{
+    background:hsl(0, 0%, 100%) ;
+}
+.bg-light-top{
+    background:hsl(225, 100%, 98%) ;
+}
+.light-card{
+    background: hsl(227, 47%, 96%);
+}
+.light-text{
+    color:hsl(228, 12%, 44%);
+}
+.light-text-2{
+    color:hsl(230, 17%, 14%);
+}
+
+.white-text{
+    color:$dark-text-2;
+}
+
 @media(max-width:500px){
     .invisible{
         display: block;

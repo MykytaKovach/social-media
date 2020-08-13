@@ -12,8 +12,8 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
-<body>
-  <div class="top-bg"></div>
+<body class="bg-dark">
+  <div class="top-bg bg-dark-top"></div>
 <div class="container">
   <header>
   <div class="heading">
@@ -24,13 +24,13 @@
   <div class="horizontal invisible"></div>
   <div class="toggle">
     <p class="text-secondary"> Dark Mode</p>
-    <input type="checkbox" class="toggle-button">
+    <input type="checkbox" class="toggle-button" id="theme">
   </div>
 </header>
 <div class="cards">
 
 
-  <div class="card facebook">
+  <div class="card facebook dark-card">
     <div class="card-header">
       <img src="/images/icon-facebook.svg" alt="" class="logo">
       <p class="name text-secondary"> @nathanf</p>
@@ -46,7 +46,7 @@
   </div>
 
 
-    <div class="card twitter">
+    <div class="card twitter dark-card">
       <div class="card-header">
         <img src="/images/icon-twitter.svg" alt="" class="logo">
         <p class="name text-secondary"> @nathanf</p>
@@ -63,7 +63,7 @@
   </div>
 
 
-    <div class="card instagram">
+    <div class="card instagram dark-card">
       <div class="card-header">
         <img src="/images/icon-instagram.svg" alt="" class="logo">
         <p class="name text-secondary"> @realnathanf</p>
@@ -80,7 +80,7 @@
   </div>
 
 
-    <div class="card youtube">
+    <div class="card youtube dark-card">
       <div class="card-header">
         <img src="/images/icon-youtube.svg" alt="" class="logo">
         <p class="name text-secondary">Nathan F.</p>
@@ -100,7 +100,7 @@
 <h1>Overview - Today</h1>
 
 <div class="cards-small">
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Page Views</p>
       <img src="/images/icon-facebook.svg" alt="">
@@ -113,7 +113,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Likes</p>
       <img src="/images/icon-facebook.svg" alt="">
@@ -126,7 +126,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Likes</p>
       <img src="/images/icon-instagram.svg" alt="">
@@ -139,7 +139,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Profile Views</p>
       <img src="/images/icon-instagram.svg" alt="">
@@ -152,7 +152,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Retweets</p>
       <img src="/images/icon-twitter.svg" alt="">
@@ -165,7 +165,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Likes</p>
       <img src="/images/icon-twitter.svg" alt="">
@@ -178,7 +178,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Likes</p>
       <img src="/images/icon-youtube.svg" alt="">
@@ -191,7 +191,7 @@
       </div>
     </div>
   </div>
-  <div class="card-sm">
+  <div class="card-sm dark-card">
     <div class="category">
       <p class="text-secondary">Total Views</p>
       <img src="/images/icon-youtube.svg" alt="">
@@ -205,6 +205,10 @@
     </div>
   </div>
 </div>
-
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
